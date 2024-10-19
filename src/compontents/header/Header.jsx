@@ -1,5 +1,5 @@
 import "./header.css";
-import Medicine from "../../assets/images/Medicine.svg";
+import Medicine from "../../assets/images/Medicine.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import Card from "./Card";
 import User from "./User";
