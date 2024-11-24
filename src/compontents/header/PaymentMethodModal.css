@@ -8,22 +8,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .paymentModalContent {
     background-color: white;
-    padding: 30px; /* Increased padding for better spacing */
-    border-radius: 10px;
-    width: 500px; /* Increased width for a larger modal */
+    padding: 50px; /* Increased padding for better spacing */
+    border-radius: 12px;
+    width: 600px; /* Increased width for a larger modal */
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for more prominence */
+    z-index: 1001;
 }
 
 .payment-options {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 30px; /* Increased margin for more space */
+    margin-bottom: 40px; /* Increased margin for more space */
 }
 
 .option {
@@ -31,19 +33,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px; /* Increased width */
-    height: 120px; /* Increased height */
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px; /* Adjusted padding */
+    width: 150px; /* Increased width */
+    height: 150px; /* Increased height */
+    border: 2px solid #ccc; /* Thicker border */
+    border-radius: 12px;
+    padding: 20px; /* Increased padding */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .option img {
-    width: 70px; /* Increased image size */
+    width: 90px; /* Increased image size */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .option.selected {
@@ -51,7 +53,7 @@
 }
 
 .option span {
-    font-size: 16px;
+    font-size: 18px; /* Increased font size */
     font-weight: bold;
 }
 
@@ -59,10 +61,10 @@ button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px 25px; /* Increased padding */
-    font-size: 18px;
+    padding: 20px 35px; /* Increased padding for a larger button */
+    font-size: 20px; /* Increased font size */
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px; /* More rounded button */
     transition: background-color 0.3s ease;
     width: 100%; /* Button takes full width */
 }
@@ -74,5 +76,5 @@ button:hover {
 .paymentModalContent button {
     display: flex;
     justify-content: center; /* Center the button */
-    margin: 20px auto; /* Center button with margin */
+    margin: 30px auto; /* Center button with more margin */
 }
